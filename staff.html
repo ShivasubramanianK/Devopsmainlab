@@ -108,7 +108,7 @@ table tr:hover{
 
 <input type="text" id="phone number" placeholder="Phone Number">
 <input type="text" id="address" placeholder="Address">
-<button onclick="addAttendance()">Save Attendance</button>
+<button onclick="addAttendance()">Save Customer Details</button>
 </div>
 
 <table>
@@ -144,7 +144,7 @@ alert("Please fill all required fields");
 return;
 }
 
-let row="<tr><td>"+name+"</td><td>"+id+"</td><td>"+phone+"</td><td>"+address+"</td><td></tr>""
+let row="<tr><td>"+name+"</td><td>"+id+"</td><td>"+phone+"</td><td>"+address+"</td></tr>"
 document.getElementById("tableBody").innerHTML+=row;
 
 document.getElementById("name").value="";
